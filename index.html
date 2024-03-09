@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Example about animate-js</title>
+
+	<!-- ========== BOOTSTRAP 4.6 & FONT-AWESOME 6.1 =========== -->
+	<link rel="stylesheet" href="css/bootstrap4.6.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- ========== CSS PERSONAL ======== -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/effect_menu_reponsive.css">
+	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container-I">
+<!-- ============= LOGO & NAV ============  -->
+			<!-- LOGO -->
+	<header >
+		<div class="logo" >
+			<div class="logo-block-1" data-aos="fade-down" data-aos-duration="900">
+			   <a class="logo-link" href="img/map.jpg" target="_blank">
+			      <img src="img/icon2.png" alt="">
+				<span>
+				   <b>S</b><span>ophia</span> 
+				   <p>Fashions fade, style is eternal</p>
+				</span>
+			   </a>   
+			</div>
+			<div id=seach-block-3 data-aos="fade-up" data-aos-duration="900">
+				<form action="" id="seach-box">
+					<input type="text" id="seach-text" placeholder="Search your items and brands">
+					<button id="seach-btn"><i class="fa-solid fa-magnifying-glass i_1"></i></button>
+				</form>
+			</div>
+			<div class="logo-block-2" data-aos="fade-down" data-aos-duration="900">
+				<a href="" id="logo_right_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a href=""><i class="fa-solid fa-user i_2"></i></a>
+				<a href=""><i class="fa-solid fa-cart-shopping i_3"></i></a>	
+			</div>
+		</div>
+		   	<!-- NAVBAR -->
+		<div class="nav" data-aos="fade-up">
+			<a class="node">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+			<ul>
+			   <li><a href="">Home</a></li>
+			   <li>
+				<div class="sub-nav">
+				   <a class="t1" href="women.html" target="_blank">Women's</a>
+				   <div class="t2">
+					<ul>
+					  <li><a href="">All Clothing</a></li>
+					  <li><a href="">Dresses</a></li>
+					  <li><a href="">Skirts</a></li>
+					  <li><a href="">Jeans</a></li>
+					  <li><a href="">Shirts & Blouses</a></li>
+					</ul>	
+				   </div>		
+				</div>
+			   </li>
+			   <li>
+				<div class="sub-nav">
+				   <a class="t1" href="man.html" target="_blank">Man's</a>
+				   <div class="t2">
+					<ul id="man-s">
+					  <li><a href="">All Clothing</a></li>
+					  <li><a href="">Jackets & Coats</a></li>
+					  <li><a href="">Jeans</a></li>
+					  <li><a href="">Shirts</a></li>
+					  <li><a href="">Suits</a></li>
+					</ul>	
+				   </div>		
+				</div>
+			   </li>
+
+			   <li><a href="accessories.html" target="_blank">Accessories</a></li>
+			   <li><a href="about_us.html" target="_blank">About us</a></li>
+			</ul>
+		   </div>
+
+		   <!-- ========== EFFECT MENU WHEN RESPONSIVE ========= -->
+		   <div class="menu-effect">
+			
+			<div class="menu-content">
+				<div><img class="icon-x" src="img/h6.png" alt=""></div>
+				<h1>Sophia</h1>
+				<ul>
+				   <li><a href="index.html">Home</a></li>
+				   <li>
+					<a href="women.html">Women's</a>
+					<ul class="effect_submenu">
+					   <li><a href="women.html">All Clothing</a></li>
+					   <li><a href="women.html">Dresses</a></li>
+					   <li><a href="women.html">Skirts</a></li>
+					   <li><a href="women.html">Jeans</a></li>
+					   <li><a href="women.html">Shirts & Blouses</a></li>
+					</ul>	
+				   </li>
+				   <li>
+					<a href="man.html">Man</a>
+					<ul class="effect_submenu">
+					   <li><a href="man.html">All Clothing</a></li>
+					   <li><a href="man.html">Jackets & Coats</a></li>
+					   <li><a href="man.html">Jeans</a></li>
+					   <li><a href="man.html">Shirts</a></li>
+					   <li><a href="man.html">Suits</a></li>
+					</ul>	
+				   </li>
+				   <li><a href="accessories.html">Accessories</a></li>
+				   <li><a href="about_us.html">About us</a></li>
+				</ul>
+			</div>
+			<div class="menu-bg"></div>
+		</div>
+	</header>
+
+	<main >
+	<!--============ 1.BANNER ==============-->
+	<div class="block-1" data-aos="fade-right" data-aos-duration="3000">
+		<div id="cs" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+				<!-- ========== img 1 ========== -->
+			<div class="carousel-item active">
+			   <img class="d-block w-100" src="img/banner20.jpg" alt="First slide">		
+			   <div class="cs-caption1 d-none d-md-block"><!-- text 1 -->
+				<h1>Man's</h1>
+				<div class="cs-text">
+				    <p class="text">Fashion heaven.</p> 
+				    <p>Various models - quality - new. Great choice for you.</p> 
+				    <button class="btn btn-primary text-button1">Visit the store now!</button>  
+				</div>
+			   </div>
+			</div>
+				  <!-- ======== img 2 ======== -->
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/banner21.jpg" alt="Second slide">
+						  <!-- text 2 -->
+				<div class="cs-caption2 d-none d-md-block">
+				   <h1>Women's</h1>
+				   <div class="cs-text_">
+					<p class="text_">Diverse models, amazing deals. Great choice for you.</p>
+					<button class="btn btn-primary">Go now!</button> 
+				   </div>
+				    </div>			    
+			</div>
+
+				  <!-- ========= img 3 =========== -->
+			<div class="carousel-item">
+				    <img class="d-block w-100" src="img/banner16.jpg" alt="Third slide">
+						<!-- text 3 -->
+				<div class="cs-caption2 d-none d-md-block">
+				   <h1>Accesories</h1>
+				   <div class="cs-text_">
+					    <p class="text_">Diverse models, amazing deals. Great choice for you.</p>
+					<button class="btn btn-primary">Go now!</button>
+				     </div>
+				</div>
+			</div>
+				  <!-- ========== img 4 =========== -->
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/banner15.jpg" alt="Third slide">
+						<!-- text 4 -->
+				<div class="cs-caption2 d-none d-md-block">
+				   <h1>Accesories</h1>
+				   <div class="cs-text_">
+					<p class="text_">Diverse models, amazing deals. Great choice for you.</p>
+					<button class="btn btn-primary">Go now!</button>
+				   </div>
+				</div>
+			</div>
+				  <!-- ============== button: prev, next =========== -->
+			<a class="carousel-control-prev" href="#cs" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#cs" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+		</div>
+
+	<!--================ 2.INTRO PRODUCT ===============-->
+	<div class="block-2 intro_product" id="intro" >
+		<div class="intro-1 intro" data-aos="fade-right" data-aos-duration="500">
+			<img src="img/intro2.jpg" alt="">
+			<div class="intro-text">
+			   <h3>HAND BAGS</h3>
+			   <a href="">
+				<p class="p1">GET UP TO</p>
+				<p class="p2">20% OFF</p>
+			  </a>
+			</div>
+		</div>
+		<div class="intro-1 intro" data-aos="flip-left" data-aos-duration="500">
+			<img src="img/intro5.jpg" alt="">
+			<div class="intro-text intro_other">
+				<h3 style="text-align:left">NEW COLLECTION</h3>
+				<p>OF FASHION CLOTHES</p>
+				<button class="btn btn-outline-danger b1">SHOP NOW!</button>
+			</div>
+		</div>
+		<div class="intro-1 intro" data-aos="fade-left" data-aos-duration="500">
+			<img src="img/intro4.jpg" alt="">
+			<div class="intro-text intro_other">
+				<h3>15% OFF</h3>
+				<p style="color:white">on brand new model</p>
+				<button class="btn btn-danger b2">SHOP NOW!</button>
+			</div>
+		</div>
+	</div>
+	<!--=============== 3.PRODUCT ================-->
+	<div class="block-3">
+		<div class="block-3-text" data-aos="fade-up-left" data-aos-duration="1200">
+			<h2>Featured Product</h2>
+			<div id="hr1"><hr></div>
+		</div>
+		
+		<div class="item" >
+			<div class="clothes" data-aos="fade-up-right" data-aos-duration="700">
+			   <img class="clothes-img1" src="img/h25.jpg" alt="">
+			   <img class="clothes-img2" src="img/h26.jpg" alt="">
+			   <div class="clothes-text1">
+				<div class="left_text">Ivory Lace Dress</div>
+				<div class="right_text">$99</div>
+			   </div>
+			   <div class="clothes-text2">Short Wedding Dress</div>
+			   <div class="clothes-text3">
+				<button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+			   </div>
+			</div>
+	
+			<div class="clothes" data-aos="fade-up-left" >
+				<img class="clothes-img1" src="img/h13.jpg" alt="">
+				<img class="clothes-img2" src="img/h14.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Tuxedo Shirt French</div>
+				   <div class="right_text">$45.55</div>
+				</div>
+				<div class="clothes-text2">Tuxedo Shirt</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		
+		
+			<div class="clothes" data-aos="fade-up-right">
+				<img class="clothes-img1" src="img/h15.jpg" alt="">
+				<img class="clothes-img2" src="img/h16.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Men's Long-Sleeve</div>
+				   <div class="right_text">$34.50</div>
+				</div>
+				<div class="clothes-text2">Sweater</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		
+		
+			<div class="clothes" data-aos="fade-up-left" data-aos-duration="700">
+				<img class="clothes-img1" src="img/h17.jpg" alt="">
+				<img class="clothes-img2" src="img/h18.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Bracelet</div>
+				   <div class="right_text">$12.5</div>
+				</div>
+				<div class="clothes-text2">Accessories, gifts</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+
+			<div class="clothes" data-aos="fade-up-right" data-aos-duration="700">
+				<img class="clothes-img1" src="img/tx1.jpg" alt="">
+				<img class="clothes-img2" src="img/tx2.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Shearling Bowling Bag, Violet</div>
+				   <div class="right_text">$49.30</div>
+				</div>
+				<div class="clothes-text2">Women Bags</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+
+			<div class="clothes" data-aos="fade-up-left" data-aos-duration="700">
+				<img class="clothes-img1" src="img/tx3.jpg" alt="">
+				<img class="clothes-img2" src="img/tx4.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Embossed Leather Long Wallet - Navy</div>
+				   <div class="right_text">$85.20</div>
+				</div>
+				<div class="clothes-text2">Men 
+				</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--================= 4.ACCESSORIES ==============-->
+	<hr>
+	<div class="block-4" data-aos="zoom-out-right" data-aos-duration="800">
+		<div class="block-4-pk">
+			<img src="img/h23.jpg" alt="">
+			<div class="block-4-text">
+				<h1>BUY 2 ITEMS</h1>
+				<p>GET ONE FOR FREE!</p>
+				<button class="btn btn-danger"><a href="accessories.html">SHOP NOW!</a></button>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<!--================ 5. NEW PRODUCT ================-->
+	<div class="block-5 new" >
+		<div class="new-title" data-aos="fade-down-left" data-aos-duration="1200">
+			<h2>New Product</h2>
+			<div id="hr2"><hr></div>
+		</div>
+		
+		<div class="item">
+			<div class="clothes" data-aos="fade-up-left" data-aos-duration="700">
+			   <img class="clothes-img1" src="img/h38.jpg" alt="">
+			   <img class="clothes-img2" src="img/h37.jpg" alt="">
+			   <div class="clothes-text1">
+				<div class="left_text">Pink Tie Dye Halter Neck Maxi Dress</div>
+				<div class="right_text">$331</div>
+			   </div>
+			   <div class="clothes-text2">Short Dress</div>
+			   <div class="clothes-text3">
+				<button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+			   </div>
+			</div>
+	
+			<div class="clothes" data-aos="fade-up-right" data-aos-duration="700">
+				<img class="clothes-img1" src="img/h35.jpg" alt="">
+				<img class="clothes-img2" src="img/h36.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Aqua Tie Dye Ruffled Square Neck Dress</div>
+				   <div class="right_text">$76.50</div>
+				</div>
+				<div class="clothes-text2">Short Dress</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		
+		
+			<div class="clothes" data-aos="fade-up-left" data-aos-duration="700">
+				<img class="clothes-img1" src="img/h39.jpg" alt="">
+				<img class="clothes-img2" src="img/h40.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Pink High Neck Puff Sleeve Midi Dress</div>
+				   <div class="right_text">$78.50</div>
+				</div>
+				<div class="clothes-text2">Short Dress</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		
+		
+			<div class="clothes" data-aos="fade-up-right" data-aos-duration="700">
+				<img class="clothes-img1" src="img/h41.jpg" alt="">
+				<img class="clothes-img2" src="img/h42.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Mint Green Strappy Tiered Midi Dress</div>
+				   <div class="right_text">$51.50</div>
+				</div>
+				<div class="clothes-text2">Short Dress</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+
+			<div class="clothes" data-aos="fade-up-left" data-aos-duration="700">
+				<img class="clothes-img1" src="img/w11.jpg" alt="">
+				<img class="clothes-img2" src="img/w12.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Stripe Paisley Printed Shirred Bodice Midi Dress</div>
+				   <div class="right_text">$29.40</div>
+				</div>
+				<div class="clothes-text2">Womens Dress</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		
+			<div class="clothes" data-aos="fade-up-right" data-aos-duration="700">
+				<img class="clothes-img1" src="img/w15.jpg" alt="">
+				<img class="clothes-img2" src="img/w16.jpg" alt="">
+				<div class="clothes-text1">
+				   <div class="left_text">Green Satin Twist Neck Midi Dress</div>
+				   <div class="right_text">$48.00</div>
+				</div>
+				<div class="clothes-text2">Womens Dresses</div>
+				<div class="clothes-text3">
+				   <button class="btn btn-info">Add to cart <span class="fa fa-shopping-cart"></span></button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--6 ABOUT US  -->
+	<hr>
+	<div class="block-6 about"  data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700">
+		<div class="about-img">
+			<img src="img/h48.jpg" alt="">
+		</div>
+		<div class="about-content">
+			<h1>ABOUT US</h1>
+			<div id="hr3"><hr></div>
+			<p id="about_p1"><span>S</span>ophia is an online fashion shop specializing 
+				in providing quality fashion products for both men and women. 
+				We are proud to be the cooperation unit of many big brands...</p>
+			<button class="btn btn-info"><a href="about_us.html">Learn about us</a> </button>
+		</div>
+	</div><hr>
+	</main>
+	<footer>
+		<div class="footer-link"   data-aos="flip-right" data-aos-duration="900">
+			<div class="footer-link-logo">
+				<a href="">
+					<img src="img/icon2.png" alt="">
+					<span id="footer_text1">S</span><span id="footer_text2">ophia</span>
+				</a>
+					
+				</b>
+			 </div>
+			<div class="footer-link-icon">
+				<ul class="icon">
+					<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-link-pages">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="women.html">Women's</a></li>
+					<li><a href="man.html">Man's</a></li>
+					<li><a href="accessories.html">Accessories</a></li>
+					<li><a href="about_us.html">About us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="contact"  data-aos="fade-right" data-aos-duration="600">
+			<h2>Contact us</h2>
+			<p>Email: sophia123@ctu.vn</p>
+			<p>Phone number: 1900737434</p>
+			<p>Address: 3/2, Hưng Lợi, Ninh Kiều, Cần Thơ</p>
+		</div>
+		<div>
+			<span id="email-span">Email <input type="email" name="email" id="email" placeholder="Enter your email"></span>
+		</div>
+		<div class="footer-all_right"  data-aos-anchor-placement="bottom-bottom">
+			<p>
+			   <i class="fa-regular fa-copyright"></i>
+			   2022 Sophia Fashion | All rights reversed
+			</p>
+			
+			
+		</div>
+	</footer>
+
+	<!-- ============== SHOPPING CART - HTML =========== -->
+	<div class="cart-icon">
+	  <p>
+	      <i class="fa-solid fa-cart-shopping cart-icon-btn"></i>
+		<span class="cart-amount">0</span>	
+	  </p>
+	</div>
+	
+	<section class="cart">
+		<i class="fa-solid fa-x"></i>
+		<form action="">
+		    <table>
+			 <thead>
+			    <tr>
+				    <th>Products</th>
+				    <th>Price</th>
+				    <th>Amount</th>
+				    <th>Choose</th>
+			    </tr>	
+			 </thead>	
+			 <tbody>
+			 	
+			 </tbody>		
+		    </table>
+		    <div style="text-align:right;" class="price-total">
+			 <p style="font-weight:bold;">Total: $<span class="price-total-span">0</span></p>
+		    </div>
+    
+		    <button>Buy now</button>
+		</form>
+	</section>
+	<div class="bg"></div>
+   </div>
+
+
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	    </script>
+	<script>
+		window.addEventListener('DOMContentLoaded', (evt) => {
+			console.log('DOM fully loaded and parsed');
+		})
+	</script>
+	<script src="js/shopping-cart.js"></script>
+	<script src="js/effect_menu_responsive.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+	
+</html>

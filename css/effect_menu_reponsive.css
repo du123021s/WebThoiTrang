@@ -1,0 +1,104 @@
+/* html, body{
+	height: 100%;
+	list-style: none;
+	text-decoration: none;
+} */
+.menu-effect {
+    height: 100%;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.menu-content {
+    height: 100%;
+    width: 450px;
+    background-color: rgb(2, 184, 244);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: ease-in-out 1.2s;
+    position: fixed;
+    opacity: 0;
+}
+
+img.icon-x {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 88%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.menu-content h1 {
+    font-size: 65px;
+    letter-spacing: 5px;
+    margin-top: 25px;
+    margin-left: 26%;
+    font-family: serif;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.menu-content ul {
+    list-style: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.menu-content > ul > li {
+    padding-left: 12%;
+    padding-bottom: 2%;
+    background: none;
+    transition: 0.4s;
+}
+.menu-content > ul > li:hover{
+    background: #bfe8ef;
+}
+.menu-content > ul > li > a {
+    color: #970707;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.effect_submenu > li{
+    padding-left: 10%;
+    transition: 0.4s;
+}
+.effect_submenu > li:hover{
+    background-color: rgb(249, 239, 228);
+}
+.effect_submenu > li > a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(69, 10, 187);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu-effect .menu-bg {
+    background-color: #d6f4ffa1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 98;
+}
+/* ======= classList ======*/
+.menu-content_visible{  
+	opacity: 1;
+	visibility: visible;
+}
+.bg_visible{
+	opacity: 1 !important;
+	visibility: visible !important;
+
+}
+.add{
+      font-size: 3em;
+}

@@ -1,0 +1,121 @@
+/* =========== SHOPPING CART ============ */
+
+.cart button{
+      margin-top: 12px;
+      height: 30px;
+      padding: 0 20px;
+      cursor: pointer;
+      border:none ;
+      border-radius: 5px;
+      background-color: tomato;
+}
+.cart-icon{ 
+      position: fixed;
+      bottom: 10%;
+      left: 93%;
+      top: 85%;
+      font-size: 22px;
+      padding: 18px 18px;
+      cursor: pointer;
+      font-size: 2em;
+      color: rgb(255, 255, 255);
+      border-radius: 50%;
+      border: 1px solid;
+      box-shadow: 5px 10px 18px rgb(56, 136, 120);
+      height: 9%;
+      background-color: #48b4aa;
+      transition: 0.4s;
+}
+.cart-icon i{transform: scale(1);}
+.cart-icon:hover i{transform: scale(1.1);}
+.cart-icon .cart-amount{
+      position: absolute;
+      color: #d93939;
+      padding: 22px 29px;
+      margin: 0px 3px;
+      font-size: 1.2rem;
+      font-weight: 700;
+}
+.cart{
+      position: fixed;
+      height: 100vh;
+      width: 30%;
+      padding: 0 28px;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      background-color: #ddd;
+      overflow-y: scroll;
+      transition: all 0.4s ease;
+      z-index: 100;
+}
+.cart i.fa-solid.fa-x {
+      margin-right: 30em;
+      font-size: 26px;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      cursor: pointer;
+      padding: 10px;
+      transition: 0.4s;
+  }
+.cart i.fa-solid.fa-x:hover{
+      background-color:#e9c2c0;
+      padding: 12px;
+}
+
+.cart h2{
+      margin-bottom: 20px;
+}
+.cart table{
+      width: 100%;
+}
+
+.cart table thead tr th:first-child{
+      text-align: left;
+}
+.cart table tr td{
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+      text-align: right;
+}
+.cart table tbody tr td:last-child{
+      text-align: right;
+}
+
+.bg{
+    background-color: #d6f4ffa1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 98;
+}
+
+.bg_visible{
+      opacity: 1;
+      visibility: visible;
+}
+
+/* ===== RESPONSIVE CART ====== */
+@media (max-width:1024px){
+      .cart{
+            width: 47%;
+      }
+}
+@media (max-width:768px){
+      .cart{
+            width: 62%;
+      }
+}
+@media (max-width:540px){
+      .cart{
+            width: 84%;
+      }
+}

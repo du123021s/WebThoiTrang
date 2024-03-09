@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+      margin: 0px; padding: 0px;
+      top: 0px;
+      left: 0px;
+}
+body{
+      overflow-x: hidden;
+}
+
+
+.container-I{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      min-height: 100vh;
+      grid-template-rows: minmax(auto, auto, auto);
+}
+header{}/*  ==> edited the css from the file header.css. Don't need edit it. */
+
+main{
+      grid-column: 1/4;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 10px;
+      background-color: rgb(159, 252, 221);
+}     
+      /*==================== BANNER =====================*/
+      main .block-1{
+            grid-column: span 4;
+            min-height: 100px;    
+            width: 100%;
+            height: 450px; 
+      }
+      main .block-2, .block-3, .block-4{
+            grid-column: span 4;
+      }
+      #about_banner1 {
+		background-image: url(../img/h46.jpg);
+			background-color: whitesmoke;
+			background-attachment: fixed;
+			max-width: 100%;
+			max-height: 450px;
+                  padding-top: -10px;
+			padding-left: 55px;
+			margin: 0 auto;
+			transition: transform .2s;
+			color: white;
+			animation-name: about_us;
+			animation-duration: 3s;
+			cursor: pointer;
+			margin-bottom: 45px;
+	}
+			@keyframes about_us{
+				from{opacity: 0;width: 95%; height: 350px;}
+				to {opacity: 1; width: 100%; height: 450px;}
+			}
+			#ani {
+				display: block;
+				margin-left: 6%;
+				animation-name: txt_about;
+				animation-duration: 6s;
+				margin-top: 3%;
+			  }
+
+			@keyframes txt_about{
+				from{ opacity: 0.3;}
+				to{ opacity: 1;}
+			}
+            #about_banner1 .row{
+                  width: 100%;
+                  height: 100%;
+            }
+	#button_1{
+		margin-left: 65%;
+	}
+
+	.title_about_us{
+		padding-top: 27px;
+		padding-bottom: -20px;
+		font-weight: 800;
+		font-size: 50px;
+	}
+
+	.title_about_us_sub{
+		font-size: 18px;
+		font-weight: bold;
+
+	}
+
+	blockquote{
+		font-weight: 600;
+	}
+      /*==== hr tag ====*/
+	#hr1 hr{
+		width: 60%;
+		height: 4px;
+		background-color: rgb(255, 86, 86);
+		margin-top: 35px;
+		margin-bottom: 35px;
+            margin-left: 0;
+	}
+	
+      #hr3 hr, #hr5 hr, #hr6 hr {
+		width: 23%;
+		height: 4px;
+		background-color: red;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		opacity: 0.9;
+		border-top: red;
+		margin-left: 38%;
+	}
+
+	#hr4 hr{
+		width: 35%;
+		height: 4px;
+		background-color: red;
+		margin-top: 85px;
+		margin-bottom: 39px;
+		opacity: 0.9;
+		border-top: red;
+	}
+
+
+      /*==== Content ====*/
+	.container-fluid, .container{
+		margin-bottom: 55px;
+	}
+	#img_right img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.block-2 .block-2_pra{
+		margin-top: 8%;
+	}
+	.small_title{
+		font-weight: 600;
+	}
+	.big_title p{
+		font-size: 45px;
+	}
+	div.txt_content{
+		font-size: 21px;
+		font-weight: 350;
+		padding-bottom: 10px;
+	}
+	.h1, h1 {
+		font-size: 2.5rem;
+		letter-spacing: 2px;
+		font-size: 53px;
+	}
+	.mission, .beaches, .protect{
+		text-align: center;
+	}
+	div#background-img {
+		background-image: url(../img/h54.jpg);
+		background-color: whitesmoke;
+		background-attachment: fixed;
+	}
+      .block-3 .row .mission{
+            margin-top: 1%;
+            margin-left: 25%;
+      }
+      .card-body{
+            margin-top: 7%;
+            font-size: 18px;
+      }
+	div.vision{
+		float: left;
+		padding: 40px;
+	}
+      .block-4 .vision .big_title{
+		font-size: 48px;
+		float: left;
+      }
+	.row .col-md-3 img{
+		width: 110%;
+		height: 450px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.container .big_title {
+		font-weight: 1000;
+		cursor: pointer;
+	}
+
+	.container-fluid .big_title {
+		font-weight: 1000;
+		cursor: pointer;
+	}
+	
+	#col_img_vision{
+		background-color: #fff; opacity: 0.9;
+		margin-left:10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+	}
+
+
+footer{}/*  ==> edited the css from the file header.css. Don't need edit it. */

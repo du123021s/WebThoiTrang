@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+      margin: 0px; padding: 0px;
+      top: 0px;
+      /* left: 0px; */
+}
+body{
+      overflow-x: hidden;
+}
+
+
+.container-I{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      min-height: 100vh;
+      grid-template-rows: minmax(auto, auto, auto);
+}
+header{}/*  ==> edited the css from the file header.css. Don't need edit it. */
+
+main{
+      grid-column: 1/4;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+} 
+	main .block-1{
+		grid-column: span 4;
+		background-color: bisque;
+		grid-gap: 10px;
+	}
+	.block-1 .banner{
+		width: 100%;
+		height: 400px;
+		position: relative;
+            overflow-x: hidden;
+            overflow-y: hidden;
+	}
+	.block-1:hover .banner{
+		opacity: 0.8;
+
+	}
+	.block-1 .banner img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+      .block-1 .banner img:hover{
+            transform: scale(1.2);
+            transition: 0.4s;
+      }
+	.block-1 .banner .m-banner-text{
+		position: absolute;
+            top: 12%;
+            left: 11%;
+            letter-spacing: 2px;
+		-webkit-animation-name: m_text;
+		-webkit-animation-duration: 2s;
+		animation-name: m_text;
+		animation-duration: 2s;
+	}
+	@-webkit-keyframes m_text{
+		from{left: -1%; opacity: 0.6;}
+		to{left: 11%; opacity: 1;}
+	}
+	@keyframes m_text{
+		from{left: -1%; opacity: 0.6;}
+		to{left: 11%; opacity: 1;}
+	}
+	.block-1 .banner .m-banner-text h1{
+		font-size: 53px;
+		font-weight: 700;
+		height: 75px;
+	}
+	.block-1 .banner .m-banner-text p{
+		font-size: 32px;
+	}
+	.block-1 .banner .m-banner-text button{
+		font-size: 18px;
+		border-radius: 0;
+		margin-left: 24%;
+		margin-top: 7%;
+	}
+      .block-1 .banner .m-banner-text button:hover{
+            transform: scale(1.1);
+            transition: 0.4s;
+            opacity: 1;
+            background-color: deeppink;
+      }
+
+/* ========================== NEW PRODUCT =============================== */
+	main .block-2{
+		grid-column: span 4;
+	}
+	main .block-2{
+            grid-column: span 4;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* grid-gap: 9px; */
+      }
+            .block-2 .block-2-text{
+                  grid-column: span 4;
+                  margin-top: 4%;
+            }
+           .block-2 .item{
+            grid-column: span 4;
+           }
+           .block-2 .block-2-text h2{
+                  text-align: center;
+                  font-size: 39px;
+                  font-weight: 600;
+           }
+      #hr1 hr{
+            width: 30%;
+		height: 4px;
+		background-color: rgb(255, 86, 86);
+		margin-top: 30px;
+		margin-bottom: 38px;
+            margin-left:35%;
+      }
+
+
+/* ====================== BANNER, NEW PRODUCT - RESPONSIVE ================= */
+	@media (max-width:1024px){
+		.block-1 .banner .m-banner-text h1 {
+			margin-bottom: 64px;
+			margin-top: -20px;
+		  }
+	}
+	@media (max-width:768px){
+		.block-1 .banner {
+			width: 100%;
+			height: 370px;
+			position: relative;
+		  }
+              .block-1 .banner .m-banner-text {
+                  position: absolute;
+                  top: 26%;
+                  left: 4%;
+            }
+		  .block-1 .banner .m-banner-text h1 {
+			font-size: 41px;
+			font-weight: 700;
+			margin-bottom: 0px;
+		  }
+		  .block-1 .banner .m-banner-text p {
+			font-size: 21px;
+		  }
+		  .block-1 .banner .m-banner-text button {
+			font-size: 15px;
+			margin-left: 28%;
+			margin-top: 13%;
+		  }
+		/* ====== new product - responsive ===== */
+		  .block-2 .block-2-text h2 {
+			text-align: center;
+			font-size: 34px;
+			font-weight: 600;
+			letter-spacing: 2px;
+		  }
+	}
+	@media (max-width:480px){
+		.block-1 .banner {
+			width: 100%;
+			height: 320px;
+			position: relative;
+		  }
+              .block-1 .banner .m-banner-text {
+                  position: absolute;
+                  top: 26%;
+                  left: 5%;
+            }
+		  .block-1 .banner .m-banner-text h1 {
+                  font-size: 31px;
+                  height: 22px;
+                  margin-bottom: 30px;
+                  margin-top: -9px;
+		  }
+		  .block-1 .banner .m-banner-text p {
+			font-size: 12px;
+		  }
+		  .block-1 .banner .m-banner-text button {
+			font-size: 12px;
+			border-radius: 0px;
+			margin-left: 37%;
+			margin-top: 9%;
+		  }
+
+	/* ====== new product - responsive ===== */
+		  .block-2 .block-2-text h2 {
+			text-align: center;
+			font-size: 32px;
+			font-weight: 600;
+		  }
+	}
+
+

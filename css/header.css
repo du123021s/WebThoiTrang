@@ -1,0 +1,361 @@
+header{
+      grid-column: 1/4;
+      grid-row: 1/2;
+      width: 100%;
+      min-height: 50px;
+      display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+      /* ======= LOGO ======= */
+     
+      header .logo{
+            grid-column: span 2;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            display: flex;
+            line-height: 1;
+            height: 129px;
+      }
+      /* header .logo > .logo-block-1{ margin-left: 10em;} */
+      header .logo > .logo-block-1 > a{
+            color: rgb(8, 7, 7);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.4s;
+            display: flex;
+            align-items: center;
+            font-size: 60px;
+      }
+      header .logo:hover > .logo-block-1 > a{
+            color: rgb(6, 218, 250); 
+            transition: 0.4s;
+      }
+            /* logo block 1 */
+            .logo > .logo-block-1 > a > img{
+                  height: 92px;
+                  width: 92px;
+                  transition: 0.4s;
+            }
+            .logo > .logo-block-1 > a > img:hover{
+                  transform: scale(1.1);
+                  border-bottom: 3px solid #d94139;
+            }
+            .logo > .logo-block-1 > a > span:hover{
+                  font-size: 65px;
+            }
+            .logo > .logo-block-1 > a > span{
+                  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            }
+            .logo > .logo-block-1 > a > span b{
+                  font-size: 100px;
+                  color: rgb(234, 52, 52);
+                  padding-right: 0px;
+                  margin-right: 0px;
+            }
+            .logo > .logo-block-1 > a > span p{
+                  font-size: 13px;
+                  letter-spacing: 2px;
+                  font-weight: 300;
+                  margin-left: 15px;
+            }
+            /* logo block 2 */
+            .logo > .logo-block-2{
+                  margin-left: 8em;
+                  margin-top: 2.5em;
+                  font-size: 27px;
+                  display: inline-flex;
+                  cursor: pointer;
+            }
+            .logo > .logo-block-2 > a{
+                  color: rgb(16, 137, 177)
+            }
+            .logo > .logo-block-2 > a > i{
+                  padding-right: 0.5em;
+                  transition: 0.4s;
+            }
+            .logo > .logo-block-2 > a > i:hover{
+                  color: rgb(0, 191, 255);
+                  transform: scale(1.1);
+            }
+            a#logo_right_icon{
+                  visibility: hidden;
+            }
+            /* search taskbar in header tag */
+            .logo #seach-block-3{
+                  margin-left: 12em;
+                  margin-top: 2em;
+            }
+            .logo form#seach-box {
+                  align-items: center;
+                  justify-content: center;
+                  display: flex;
+                  border-bottom-style: double;
+                  border-color: deepskyblue;
+                  border-radius: 30px;
+                  border-left-style: double;
+              }
+            #seach-box #seach-text{
+                  border: none;
+                  outline: none;
+                  background: white;
+                  padding: 10px 15px;
+                  font-size: 15px;
+                  width: 500px;
+                  letter-spacing: 2px;
+                  font-family: monospace;
+            }
+            #seach-box #seach-btn{
+                  cursor: pointer;
+                  border: none;
+                  padding: 17px 23px;
+                  border-radius: 50%;
+                  background: none;
+                  transition: 0.4s;
+            }
+            #seach-btn:hover i{transform: scale(1.5);}
+      /* Responsive */
+      @media (max-width: 1278px) {
+            .logo-block-1 > a{
+                  font-size: 45px;
+            }
+            .logo-block-1 > a > span p{
+                  font-size: 8px;
+                  letter-spacing: 2px;
+                  font-weight: 300;
+                  margin-left: 15px;
+                  }
+            .logo > .logo-block-2{
+                  margin-left: 3em;
+                  margin-top: 2.5em;
+                  color: #48b4aa;
+                  font-size: 27px;
+                  display: inline-flex;
+                  cursor: pointer;
+            }
+            .logo #seach-block-3{
+                  margin-left: 4em;
+                  margin-top: 2em;
+            }
+      }
+      @media (max-width:1040px){
+            .logo-block-2 a#logo_right_icon {
+            visibility: visible;}
+      }
+
+      /* ===================== NAVBAR ==================== */
+      header .nav{
+            grid-column: span 2;  
+            width: 100%s;
+            height: 60px;
+            z-index: 99;
+            background-color: deepskyblue;
+      }
+        
+      .nav .node {
+            position: absolute;
+            left: 25px;
+            cursor: pointer;
+            font-size: 45px;
+            visibility: hidden;
+        }
+        a.node {
+            position: absolute;
+            top: -1.6em;
+        }
+      header .nav > ul{
+            list-style: none;
+            display: flex;
+            margin: auto;
+            
+      }
+      header .nav > ul > li{
+            padding-left: 15px;
+            padding-right: 15px;
+
+      }
+      header .nav > ul > li:hover{
+            background-color: rgb(20 111 173);
+      }
+      header .nav > ul > li > a{
+            font-size: 24px;
+            font-weight: 600;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            transition: 0.4s;
+      }
+      header .nav > ul > li > a:hover{
+            color: rgb(240 65 65);
+            padding-top: 7px;
+            padding-bottom: 13px;
+      }
+            /* ===== subnav ===== */
+      .sub-nav{
+            position: relative;
+            padding-top: 10px;
+            padding-bottom: 9px;  
+            padding-right: 15px;
+      }
+      .sub-nav:hover{
+            padding-top: 7px;
+            padding-bottom: 13px;
+      }
+      .sub-nav .t1{
+            text-decoration: none;
+            transition: 0.4s;
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            padding: 0px 20px 5px 20px;
+            display: block;     
+      }
+      .sub-nav:hover .t1{ 
+            color: rgb(255, 88, 88);      
+      
+      }
+      .sub-nav .t2{
+            top: 60px;
+            left: 18px;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            transition: 0.4s;
+           
+      }
+
+      .sub-nav:hover .t2{
+            visibility: visible;
+            opacity: 1;
+            left: -15px;
+      }
+      .sub-nav .t2 > ul{
+            background-color:rgb(149 164 230);
+            list-style: none;
+            position: absolute;
+            border-radius: 1%;
+            width: calc(100% + 350px);
+      }
+      .sub-nav .t2 > #man-s{
+            width: calc(100% + 350px);
+      }
+      /* .sub-nav .t2 > ul > li{
+            padding-left: 0px;
+      } */
+      .sub-nav .t2 > ul > li:hover{
+            background-color: rgb(247, 243, 240);
+      }
+      .sub-nav .t2 > ul > li > a{
+            font-size: 22px;
+            font-weight: 500;
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding-left: 40px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            font-family: sans-serif;
+      }
+      .sub-nav .t2 > ul > li > a:hover{
+            color: rgb(243, 102, 102);
+            
+      }
+      /* Responsive */
+      @media (max-width: 1100px) {
+            .logo-block-1 > a{
+                  font-size: 35px;
+            }
+            .logo-block-1 > a > span p{
+                  font-size: 7px;
+                  letter-spacing: 1px;
+                  font-weight: 300;
+                  margin-left: 10px;
+                  }
+            .logo > .logo-block-2{
+                  margin-left: 22em;
+                  margin-top: 2.5em;
+                  color: #48b4aa;
+                  font-size: 24px;
+                  display: inline-flex;
+                  cursor: pointer;
+            }
+            .logo #seach-block-3{
+                  display: none;
+            }
+            .logo > .logo-block-1 > a > span b {
+                  font-size: 80px;}
+            /* nav responsive */
+            header .nav > ul > li > a{
+                  font-size: 19px;
+                  font-weight: 600;
+                  padding-left: 15px;
+                  padding-right: 15px;
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  color: white;
+                  display: block;
+                  text-decoration: none;
+                  transition: 0.4s;
+            }
+            header .nav > ul > li > a:hover {
+                  color: rgb(240 65 65);
+                  padding-top: 10px;
+                  padding-bottom: 13px;
+              }
+              header .nav > ul > li {
+                  padding-bottom: 0px;
+                  padding-top: 2px;
+              }
+            .sub-nav .t2 > ul > li > a{
+                  font-size: 15px;
+                  font-weight: 500;
+                  color: black;
+                  display: block;
+                  text-decoration: none;
+                  padding-left: 40px;
+                  padding-top: 2px;
+                  padding-bottom: 10px;
+            }
+            .sub-nav .t1{
+                  font-size: 20px;   
+            }
+            .sub-nav {
+                  position: relative;
+                  padding-top: 13px;
+                  padding-bottom: 4px;
+                  padding-right: 15px;
+              }
+             
+      }
+      @media (max-width: 920px) {
+            .nav .node, a#logo_right_icon{
+                  visibility: visible;
+            }
+            .nav .node{color: white;}
+            .nav, .logo-link img{visibility: hidden ;}
+            header .logo{
+                  background-color: deepskyblue;
+                  height: 75px;
+            }
+            .logo-block-1 .logo-link span{ font-size: 55px;}
+            .logo > .logo-block-1 > a > span b {
+                  font-size: 65px;}
+            .logo-block-1 .logo-link span {
+                  font-size: 45px;
+            }
+            .logo > .logo-block-1 > a > span p {opacity: 0;}
+            .logo > .logo-block-2 {
+                  margin-left: 22em;
+                  margin-top: 22px;
+                  color: rgb(255 255 255);
+                  font-size: 20px;
+                  display: inline-flex;
+                  cursor: pointer;
+            }
+            .logo-block-2 a i{color: white;}
+            header{height: 75px;}
+      }
